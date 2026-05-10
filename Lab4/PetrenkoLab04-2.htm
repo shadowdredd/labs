@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Петренко — Лабораторна 04-2</title>
+</head>
+<body bgcolor="#ffffff">
+
+    <h2 align="center">Рядки з текстом, що біжить (горизонтально)</h2>
+
+    <!-- 1. Текст коливається з боку в бік -->
+    <div style="background-color: #ffd6d6; padding: 8px;">
+        <marquee behavior="alternate" scrollamount="5">
+            <b>1. Текст коливається з боку в бік ↔</b>
+        </marquee>
+    </div>
+
+    <br>
+
+    <!-- 2. Текст пробігає справа наліво та з'являється знову -->
+    <div style="background-color: #d6ffd6; padding: 8px;">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            <b>2. Текст пробігає справа наліво та з'являється знову ←</b>
+        </marquee>
+    </div>
+
+    <br>
+
+    <!-- 3. Текст пробігає зліва направо та зупиняється -->
+    <div style="background-color: #d6d6ff; padding: 8px;">
+        <marquee behavior="slide" direction="right" scrollamount="5">
+            <b>3. Текст пробігає зліва направо та зупиняється →</b>
+        </marquee>
+    </div>
+
+    <br>
+
+    <!-- 4а. Повільне запізнення -->
+    <div style="background-color: #fff3cd; padding: 8px;">
+        <marquee behavior="scroll" direction="left" scrollamount="3" scrolldelay="200">
+            <b>4а. Повільний рух — великий scrolldelay (200мс)</b>
+        </marquee>
+    </div>
+
+    <br>
+
+    <!-- 4б. Швидке запізнення -->
+    <div style="background-color: #ffe0f0; padding: 8px;">
+        <marquee behavior="scroll" direction="left" scrollamount="3" scrolldelay="20">
+            <b>4б. Швидкий рух — малий scrolldelay (20мс)</b>
+        </marquee>
+    </div>
+
+</body>
+</html>
