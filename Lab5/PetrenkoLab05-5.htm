@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Таблиця 5x5 colspan/rowspan</title>
+  <style>
+    body { background-color: #FDFEFE; font-family: Arial; }
+    table {
+      border-collapse: collapse;
+      margin: 30px auto;
+      width: 80%;
+    }
+    td {
+      border: 2px solid #2980B9;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+    .header-cell {
+      background-color: #2980B9;
+      color: white;
+      font-weight: bold;
+    }
+    .merged-big {
+      background-color: #EBF5FB;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2980B9;
+    }
+    .merged-medium {
+      background-color: #F2F3F4;
+      font-weight: bold;
+    }
+    .normal {
+      background-color: #F5F5F5;
+    }
+  </style>
+</head>
+<body>
+
+<p align="center"><font size="5" color="#2980B9"><b>Завдання 5 — Таблиця 5×5 з об'єднаними комірками</b></font></p>
+
+<table>
+  <!-- Рядок 1 -->
+  <tr>
+    <td colspan="2" rowspan="2" class="merged-big" align="center" valign="middle">
+      🌍<br>Континенти
+    </td>
+    <td class="header-cell">Площа (млн км²)</td>
+    <td class="header-cell">Населення (млрд)</td>
+    <td class="header-cell">Країн</td>
+  </tr>
+  <!-- Рядок 2 (продовжується з rowspan) -->
+  <tr>
+    <td class="normal" align="center" valign="middle">Загальна площа суші:<br><b>148.9</b></td>
+    <td class="normal" align="center" valign="middle">Населення Землі:<br><b>8.1</b></td>
+    <td class="normal" align="center" valign="middle">Усього держав:<br><b>195</b></td>
+  </tr>
+  <!-- Рядок 3 -->
+  <tr>
+    <td rowspan="3" class="merged-medium" align="center" valign="middle">
+      <b>Топ-3<br>найбільших</b>
+    </td>
+    <td class="normal">Азія</td>
+    <td class="normal" align="center">44.6</td>
+    <td class="normal" align="center">4.7</td>
+    <td class="normal" align="center">49</td>
+  </tr>
+  <!-- Рядок 4 -->
+  <tr>
+    <td class="normal">Африка</td>
+    <td class="normal" align="center">30.4</td>
+    <td class="normal" align="center">1.4</td>
+    <td class="normal" align="center">54</td>
+  </tr>
+  <!-- Рядок 5 -->
+  <tr>
+    <td class="normal">Америка (Пн.)</td>
+    <td class="normal" align="center">24.7</td>
+    <td class="normal" align="center">0.6</td>
+    <td class="normal" align="center">23</td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Таблиця з Caption та TH</title>
+  <style>
+    body { background-color: #F5F5F5; font-family: Arial; }
+    table {
+      border-collapse: collapse;
+      width: 85%;
+      margin: 20px auto;
+    }
+    caption {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2980B9;
+      margin-bottom: 10px;
+      font-family: Arial;
+    }
+    th {
+      background-color: #2980B9;
+      color: white;
+      padding: 10px;
+      border: 1px solid #2980B9;
+      font-size: 14px;
+    }
+    td {
+      border: 1px solid #2980B9;
+      padding: 9px;
+      font-size: 13px;
+    }
+    tr:nth-child(odd) td  { background-color: #EBF5FB; }
+    tr:nth-child(even) td { background-color: #F2F3F4; }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>Розклад занять на тиждень — група 101-ТК</caption>
+
+  <tr>
+    <th>№ пари</th>
+    <th>Понеділок</th>
+    <th>Вівторок</th>
+    <th>Середа</th>
+    <th>Четвер</th>
+  </tr>
+
+  <!-- Рядок 1 — вирівнювання по центру -->
+  <tr align="center">
+    <td>1</td>
+    <td>Математика</td>
+    <td>Інформатика</td>
+    <td>Фізика</td>
+    <td>Англійська</td>
+  </tr>
+
+  <!-- Рядок 2 — вирівнювання по лівому краю -->
+  <tr align="left">
+    <td>2</td>
+    <td>Програмування</td>
+    <td>Хімія</td>
+    <td>Математика</td>
+    <td>Фізика</td>
+  </tr>
+
+  <!-- Рядок 3 — вирівнювання по правому краю -->
+  <tr align="right">
+    <td>3</td>
+    <td>Історія України</td>
+    <td>Програмування</td>
+    <td>Англійська</td>
+    <td>Інформатика</td>
+  </tr>
+
+  <!-- Рядок 4 — вирівнювання по центру -->
+  <tr align="center">
+    <td>4</td>
+    <td>Фізична культура</td>
+    <td>Математика</td>
+    <td>Програмування</td>
+    <td>Хімія</td>
+  </tr>
+
+  <!-- Рядок 5 — вирівнювання по лівому краю -->
+  <tr align="left">
+    <td>5</td>
+    <td>Англійська</td>
+    <td>Фізична культура</td>
+    <td>Історія України</td>
+    <td>Програмування</td>
+  </tr>
+
+  <!-- Рядок 6 — вирівнювання по правому краю -->
+  <tr align="right">
+    <td>6</td>
+    <td>Інформатика</td>
+    <td>Фізика</td>
+    <td>Хімія</td>
+    <td>Математика</td>
+  </tr>
+
+  <!-- Рядок 7 — вирівнювання по центру -->
+  <tr align="center">
+    <td>7</td>
+    <td>Лабораторна</td>
+    <td>Семінар</td>
+    <td>Практична</td>
+    <td>Консультація</td>
+  </tr>
+
+</table>
+
+</body>
+</html>

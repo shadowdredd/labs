@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Характеристики спеціальностей</title>
+  <style>
+    body { background-color: #F5F5F5; font-family: Arial; }
+    table {
+      border-collapse: collapse;
+      margin: 30px auto;
+      width: 75%;
+    }
+    td, th {
+      border: 1px solid #2471A3;
+      padding: 10px;
+      font-size: 14px;
+    }
+    .top-header {
+      background-color: #2980B9;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+    .sub-header {
+      background-color: #2980B9;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+    .row-header {
+      background-color: #EBF5FB;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .specialty {
+      background-color: #EBF5FB;
+    }
+    td[align="center"] {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<p align="center"><font size="5" color="#2980B9"><b>Завдання 7 — Характеристики спеціальностей</b></font></p>
+
+<table>
+  <!-- Рядок 1: порожньо + "Характеристики" на 2 стовпці -->
+  <tr>
+    <td colspan="2" class="top-header">&nbsp;</td>
+    <td colspan="2" class="top-header">Характеристики</td>
+  </tr>
+
+  <!-- Рядок 2: порожньо (rowspan) + підзаголовки -->
+  <tr>
+    <td colspan="2" class="sub-header">&nbsp;</td>
+    <td class="sub-header">Кількість студентів</td>
+    <td class="sub-header">Якість успішності</td>
+  </tr>
+
+  <!-- Рядок 3: Спеціальність (rowspan=3) + 1-й рядок -->
+  <tr>
+    <td rowspan="3" class="row-header">Спеціальність</td>
+    <td class="specialty">Комп'ютерна інженерія</td>
+    <td align="center">250</td>
+    <td align="center">80%</td>
+  </tr>
+
+  <!-- Рядок 4 -->
+  <tr>
+    <td class="specialty">Телекомунікації та радіотехніка</td>
+    <td align="center">200</td>
+    <td align="center">75%</td>
+  </tr>
+
+  <!-- Рядок 5 -->
+  <tr>
+    <td class="specialty">Електромеханіка</td>
+    <td align="center">150</td>
+    <td align="center">85%</td>
+  </tr>
+</table>
+
+</body>
+</html>
