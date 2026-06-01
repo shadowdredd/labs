@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Сенсорне зображення — Природа України</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #e8f5e9; padding: 20px; text-align: center; }
+        h1 { color: #1b5e20; border-bottom: 3px solid #4caf50; padding-bottom: 8px; display: inline-block; }
+        p { color: #555; font-size: 13px; }
+        img { cursor: crosshair; border: 2px solid #388e3c; }
+
+        #tooltip {
+            display: none;
+            position: fixed;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            pointer-events: none;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Природні зони України</h1>
+<p>Наведіть курсор на область — з'явиться підказка</p>
+
+<div id="tooltip"></div>
+
+<map name="mapNature">
+    <area shape="rect"   coords="30,30,240,160"
+          data-tip="🌲 Полісся — зона мішаних лісів на півночі України">
+    <area shape="rect"   coords="30,160,360,260"
+          data-tip="🌻 Лісостеп — перехідна зона, більшість садів і полів">
+    <area shape="rect"   coords="30,260,470,370"
+          data-tip="🌾 Степ — чорноземи, пшениця та соняшники">
+    <area shape="poly"   coords="360,30,470,30,470,260,360,260,360,30"
+          data-tip="⛰️ Карпати — гори на заході, Говерла 2061 м">
+    <area shape="circle" coords="430,340,35"
+          data-tip="🌊 Чорне море — південь України, Одеса, Херсон">
+</map>
+
+<img src="nature.png" width="500" height="400" usemap="#mapNature" alt="Природні зони" border="1">
+
+<script>
+    const tooltip = document.getElementById('tooltip');
+    const areas = document.querySelectorAll('area[data-tip]');
+
+    areas.forEach(area => {
+        area.addEventListener('mousemove', function(e) {
+            tooltip.style.display = 'block';
+            tooltip.style.left = (e.clientX + 15) + 'px';
+            tooltip.style.top  = (e.clientY + 15) + 'px';
+            tooltip.textContent = this.dataset.tip;
+        });
+        area.addEventListener('mouseleave', function() {
+            tooltip.style.display = 'none';
+        });
+    });
+</script>
+
+</body>
+</html>

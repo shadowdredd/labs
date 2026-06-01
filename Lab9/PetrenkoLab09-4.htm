@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Картирування з геометричними фігурами/title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #f0f4f8; padding: 20px; text-align: center; }
+        h1 { color: #2c3e50; }
+        .links { margin: 12px 0; }
+        .links a { margin: 0 15px; color: #2980b9; text-decoration: none; }
+    </style>
+</head>
+<body>
+<h1>Навігаційна карта з геометричними фігурами</h1>
+
+<div class="links">
+    <a href="PetrenkoLab02-9 (9).htm">🏠 Домашня сторінка</a>
+    <a href="PetrenkoLab08-6.htm">🔗 Мої гіперпосилання</a>
+    <a href="PetrenkoLab09-3.htm">🇺🇦 Моя Батьківщина</a>
+</div>
+
+<p>Клацніть на фігуру — перейдете на відповідну сторінку</p>
+
+<map name="mapShapes">
+    <area shape="rect"   coords="50,50,200,180"
+          href="PetrenkoLab02-9 (9).htm" title="Прямокутник → Домашня сторінка">
+    <area shape="circle" coords="360,110,80"
+          href="PetrenkoLab08-6.htm"     title="Коло → Мої гіперпосилання" >
+    <area shape="poly"   coords="120,220,380,220,250,360,120,220"
+          href="PetrenkoLab09-3.htm"     title="Трикутник → Моя Батьківщина">
+</map>
+
+<img src="figures (1).png" width="500" height="380" usemap="#mapShapes" alt="Фігури" border="1">
+
+</body>
+</html>
