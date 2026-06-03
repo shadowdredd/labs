@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Стилі тексту</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background: #f5f0e8;
+            margin: 40px;
+        }
+        h2 {
+            color: #2c5f8a;
+            text-align: center;
+            font-size: 22pt;
+            letter-spacing: 2px;
+        }
+        /* Стилі для абзаців */
+        .p1 {
+            font-size: 14pt;
+            color: #000;
+            text-align: justify;
+            text-indent: 2%;
+            line-height: 1.6;
+        }
+        .p2 {
+            font-size: 12pt;
+            color: #8b0000;
+            font-weight: bold;
+            text-align: center;
+        }
+        .p3 {
+            font-size: 13pt;
+            color: #00008b;
+            font-style: italic;
+            text-align: left;
+            text-indent: 2%;
+        }
+        .p4 {
+            font-size: 11pt;
+            color: #006400;
+            text-decoration: underline;
+            text-align: right;
+        }
+        .p5 {
+            font-size: 14pt;
+            color: #555;
+            font-variant: small-caps;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+        /* Стилі для div-розділів */
+        .div1 {
+            background: #e0f0ff;
+            border-left: 4px solid #2c5f8a;
+            padding: 12px 20px;
+            margin: 16px 0;
+            font-size: 13pt;
+            color: #1a1a1a;
+        }
+        .div2 {
+            background: #fff0e0;
+            border: 2px dashed #cc6600;
+            padding: 12px 20px;
+            margin: 16px 0;
+            font-size: 13pt;
+            color: #333;
+            text-align: justify;
+        }
+        .div3 {
+            background: #e8ffe8;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 16px 0;
+            font-size: 13pt;
+            color: #1a4a1a;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Завдання 1–2 — Стилі шрифтів і тексту</h2>
+
+<!-- Абзаци з різним форматуванням -->
+<p class="p1">Це перший абзац із вирівнюванням по ширині та відступом першого рядка. Текст написаний чорним кольором розміром 14pt. Стилі CSS дозволяють легко керувати виглядом тексту на сторінці.</p>
+
+<p class="p2">Це другий абзац — жирний темно-червоний текст по центру. CSS робить форматування зручним.</p>
+
+<p class="p3">Це третій абзац — синій курсив із відступом першого рядка. Можна задавати будь-який колір і стиль написання тексту за допомогою властивостей CSS.</p>
+
+<p class="p4">Це четвертий абзац — зелений підкреслений текст вирівняний по правому краю.</p>
+
+<p class="p5">Це п'ятий абзац у стилі small-caps — всі літери відображаються як великі, але меншого розміру.</p>
+
+<!-- Розділи div з єдиним стильовим оформленням -->
+<div class="div1">
+    <strong>Розділ 1:</strong> Контейнер div із синьою лівою рамкою та блакитним фоном. Стиль задано через клас у контейнері style. Це дозволяє забезпечити єдність оформлення всіх розділів документа.
+</div>
+
+<div class="div2">
+    <strong>Розділ 2:</strong> Контейнер div із помаранчевою пунктирною рамкою та теплим фоном. Завдяки CSS можна швидко змінити вигляд усіх елементів одночасно, просто відредагувавши один стиль.
+</div>
+
+<div class="div3">
+    <strong>Розділ 3:</strong> Контейнер div із заокругленими кутами та зеленим фоном. Використання класів CSS — найзручніший спосіб забезпечити єдність стильового оформлення документа.
+</div>
+
+</body>
+</html>

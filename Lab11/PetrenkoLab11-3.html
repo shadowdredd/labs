@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #e0f0ff; padding: 20px; }
+        h2 { color: #cc0000; text-align: center; }
+        form { max-width: 600px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; background: #e0f4ff; }
+        td { border: 1px solid #aac; padding: 8px; }
+        input[type=text] { width: 98%; padding: 3px; }
+        .inner { width: 100%; border: none; }
+        .inner td { border: none; padding: 2px; }
+        .btn { margin-top: 10px; padding: 6px 16px; }
+    </style>
+</head>
+<body>
+<h2>Анкета</h2>
+<form action="accept.html" method="post">
+<table border="1" cellpadding="6">
+    <tr>
+        <td width="30">1.</td>
+        <td width="220">Прізвище</td>
+        <td><input type="text" name="surname"></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Ім'я, по батькові</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Число і рік народження</td>
+        <td><input type="text" name="birth"></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Домашня адреса</td>
+        <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>Місце навчання (роботи)</td>
+        <td><input type="text" name="work"></td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>Домашній (робочий) телефон</td>
+        <td><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>E-mail</td>
+        <td><input type="text" name="email"></td>
+    </tr>
+    <tr>
+        <td>8.</td>
+        <td>Область наукових інтересів</td>
+        <td>
+            <table class="inner">
+                <tr><td>1.</td><td><input type="text" name="int1"></td></tr>
+                <tr><td>2.</td><td><input type="text" name="int2"></td></tr>
+                <tr><td>3.</td><td><input type="text" name="int3"></td></tr>
+                <tr><td>4.</td><td><input type="text" name="int4"></td></tr>
+                <tr><td>5.</td><td><input type="text" name="int5"></td></tr>
+                <tr><td>6.</td><td><input type="text" name="int6"></td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
+<input type="reset" value="Відмінити введення" class="btn">
+<input type="submit" value="Надіслати" class="btn">
+</form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета віртуальної бібліотеки</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #f0f4f8; padding: 20px; }
+        h2 { color: #2c5f8a; text-align: center; }
+        form { background: white; padding: 20px; max-width: 650px; margin: auto; border: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ccc; }
+        input[type=text], input[type=password], select, textarea { width: 100%; padding: 4px; }
+        .btn { margin: 10px 4px; padding: 6px 16px; }
+    </style>
+</head>
+<body>
+<h2>Завдання 6 — Анкета віртуальної бібліотеки</h2>
+<form action="accept.html" method="post" target="_self">
+<table bgcolor="#e0f0ff">
+    <tr>
+        <td>Прізвище:</td>
+        <td><input type="text" name="surname"></td>
+    </tr>
+    <tr>
+        <td>Ім'я:</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>Пароль:</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td>Стать:</td>
+        <td>
+            <input type="radio" name="gender" value="m"> Чоловіча
+            <input type="radio" name="gender" value="f"> Жіноча
+        </td>
+    </tr>
+    <tr>
+        <td>Чим займаєтеся:</td>
+        <td>
+            <input type="radio" name="occupation" value="student"> Студент<br>
+            <input type="radio" name="occupation" value="teacher"> Викладач<br>
+            <input type="radio" name="occupation" value="worker"> Працівник<br>
+            <input type="radio" name="occupation" value="pensioner"> Пенсіонер<br>
+            <input type="radio" name="occupation" value="other"> Інше
+        </td>
+    </tr>
+    <tr>
+        <td>Ваш вік:</td>
+        <td>
+            <input type="radio" name="age" value="1"> до 18 років<br>
+            <input type="radio" name="age" value="2"> 18–25 років<br>
+            <input type="radio" name="age" value="3"> 26–35 років<br>
+            <input type="radio" name="age" value="4"> 36–50 років<br>
+            <input type="radio" name="age" value="5"> понад 50 років
+        </td>
+    </tr>
+    <tr>
+        <td>Тематика інтересів:</td>
+        <td>
+            <select name="topics" size="5" multiple>
+                <option>Фантастика</option>
+                <option>Детективи</option>
+                <option>Історія</option>
+                <option>Наука</option>
+                <option>Програмування</option>
+                <option>Психологія</option>
+                <option>Філософія</option>
+                <option>Мистецтво</option>
+                <option>Медицина</option>
+                <option>Економіка</option>
+            </select>
+            <br><small>Ctrl+клік для вибору кількох</small>
+        </td>
+    </tr>
+    <tr>
+        <td>Що зараз читаєте:</td>
+        <td><textarea name="reading" rows="3"></textarea></td>
+    </tr>
+</table>
+<input type="reset" value="Очистити" class="btn">
+<input type="submit" value="Надіслати" class="btn">
+</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Анкета</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #f0f4f8; padding: 20px; }
+        h2 { color: #2c5f8a; text-align: center; }
+        form { background: white; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ccc; }
+        input[type=text], input[type=password], select, textarea { width: 100%; padding: 4px; }
+        .btn { margin: 10px 4px; padding: 6px 16px; }
+    </style>
+</head>
+<body>
+<h2>Завдання 4 — Анкета користувача</h2>
+<form action="accept.html" method="post">
+<table bgcolor="#e0f0ff">
+    <tr>
+        <td>Прізвище:</td>
+        <td><input type="text" name="surname"></td>
+    </tr>
+    <tr>
+        <td>Ім'я:</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>Пароль:</td>
+        <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+        <td>Місто:</td>
+        <td>
+            <select name="city">
+                <option>Київ</option>
+                <option>Харків</option>
+                <option>Полтава</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Про себе:</td>
+        <td><textarea name="about" rows="4"></textarea></td>
+    </tr>
+    <tr>
+        <td>Стать:</td>
+        <td>
+            <input type="checkbox" name="gender" value="m"> Чоловіча<br>
+            <input type="checkbox" name="gender" value="f"> Жіноча
+        </td>
+    </tr>
+    <tr>
+        <td>Рівень освіти:</td>
+        <td>
+            <input type="radio" name="edu" value="school"> Школа<br>
+            <input type="radio" name="edu" value="college"> Коледж<br>
+            <input type="radio" name="edu" value="university"> Університет
+        </td>
+    </tr>
+</table>
+<input type="submit" value="Надіслати" class="btn">
+<input type="reset" value="Очистити" class="btn">
+</form>
+</body>
+</html>

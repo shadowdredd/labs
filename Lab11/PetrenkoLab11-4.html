@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Замовлення товару</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #f0f4f8; padding: 20px; }
+        h2 { color: #2c5f8a; text-align: center; }
+        form { background: white; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ccc; }
+        input[type=text], select, textarea { width: 100%; padding: 4px; }
+        .btn { margin: 10px 4px; padding: 6px 16px; }
+    </style>
+</head>
+<body>
+<h2>Завдання 3 — Форма замовлення товару</h2>
+<form action="accept.html" method="post">
+<table bgcolor="#e0f0ff">
+    <tr>
+        <td>Номер банківського рахунку:</td>
+        <td><input type="text" name="account"></td>
+    </tr>
+    <tr>
+        <td>Особистий номер користувача:</td>
+        <td><input type="text" name="userid"></td>
+    </tr>
+    <tr>
+        <td>Список товарів:</td>
+        <td>
+            <select name="goods" size="5" multiple>
+                <option value="laptop">Ноутбук</option>
+                <option value="phone">Смартфон</option>
+                <option value="tablet">Планшет</option>
+                <option value="monitor">Монітор</option>
+                <option value="keyboard">Клавіатура</option>
+                <option value="mouse">Миша</option>
+            </select>
+            <br><small>Ctrl+клік для вибору кількох</small>
+        </td>
+    </tr>
+    <tr>
+        <td>Вид оплати:</td>
+        <td>
+            <input type="radio" name="payment" value="cash"> Готівковий розрахунок<br>
+            <input type="radio" name="payment" value="card"> Безготівковий розрахунок
+        </td>
+    </tr>
+    <tr>
+        <td>Додаткова інформація:</td>
+        <td>
+            <input type="checkbox" name="info" value="balance"> Дані про залишки на рахунку<br>
+            <input type="checkbox" name="info" value="payments"> Список останніх виплат по рахунку
+        </td>
+    </tr>
+    <tr>
+        <td>Коментарі:</td>
+        <td><textarea name="comment" rows="3"></textarea></td>
+    </tr>
+</table>
+<input type="submit" value="Надіслати замовлення" class="btn">
+<input type="reset" value="Очистити" class="btn">
+</form>
+</body>
+</html>

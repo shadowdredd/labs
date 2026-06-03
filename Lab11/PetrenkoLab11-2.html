@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма на довільну тему</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Georgia, serif; background: #f0f4f8; padding: 20px; }
+        h2 { color: #2c5f8a; text-align: center; }
+        form { background: white; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #ccc; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; }
+        input, select, textarea { width: 100%; padding: 4px; }
+        .btn { margin: 10px 4px; padding: 6px 16px; }
+    </style>
+</head>
+<body>
+<h2>Завдання 1 — Форма реєстрації на захід</h2>
+<form action="accept.html" method="post">
+<table border="1" cellpadding="6" bgcolor="#e0f0ff">
+    <tr>
+        <td>Прізвище:</td>
+        <td><input type="text" name="surname"></td>
+    </tr>
+    <tr>
+        <td>Ім'я:</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="text" name="email"></td>
+    </tr>
+    <tr>
+        <td>Телефон:</td>
+        <td><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+        <td>Захід:</td>
+        <td>
+            <select name="event">
+                <option>Конференція</option>
+                <option>Семінар</option>
+                <option>Воркшоп</option>
+                <option>Виставка</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Харчування:</td>
+        <td>
+            <input type="checkbox" name="food" value="veg"> Вегетаріанське<br>
+            <input type="checkbox" name="food" value="standard"> Стандартне<br>
+            <input type="checkbox" name="food" value="none"> Не потрібно
+        </td>
+    </tr>
+    <tr>
+        <td>Оплата:</td>
+        <td>
+            <input type="radio" name="pay" value="cash"> Готівка
+            <input type="radio" name="pay" value="card"> Картка
+        </td>
+    </tr>
+    <tr>
+        <td>Коментар:</td>
+        <td><textarea name="comment" rows="3"></textarea></td>
+    </tr>
+</table>
+<input type="submit" value="Надіслати" class="btn">
+<input type="reset" value="Очистити" class="btn">
+</form>
+</body>
+</html>
