@@ -11,14 +11,15 @@
 
   <!-- ШАПКА -->
   <header class="site-header">
-    <div class="container d-flex align-items-center justify-content-between py-3">
-      <div class="logo d-flex align-items-center gap-3">
-        <div>
-          <div class="logo-title">Полтавська Політехніка</div>
-          <div class="logo-sub">Спортивний портал</div>
-        </div>
-      </div>
+   <div class="container d-flex align-items-center py-3">
+  <a href="index.html" class="logo-link d-flex align-items-center gap-3">
+    <img src="images/logo.png" alt="НУПП" class="logo-img">
+    <div>
+      <div class="logo-title">Полтавська Політехніка</div>
+      <div class="logo-sub">Спортивний портал</div>
     </div>
+  </a>
+</div> 
   </header>
 
   <!-- МЕНЮ -->
@@ -39,28 +40,50 @@
   </nav>
 
   <!-- СЛАЙДЕР -->
-  <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="slide-placeholder">🏆 Спортивні події НУПП 2026</div>
-      </div>
-      <div class="carousel-item">
-        <div class="slide-placeholder">🏀 Баскетбол — студентські ліги «Пліч-о-пліч»</div>
-      </div>
-      <div class="carousel-item">
-        <div class="slide-placeholder">⚽ Футбольний турнір університету</div>
-      </div>
-      <div class="carousel-item">
-        <div class="slide-placeholder">🏐 Волейбол — весняний кубок</div>
+ <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+<div class="carousel-item">
+  <img src="images/photo2.jpg" class="d-block w-100 slide-img" alt="Слайд 3">
+  <div class="carousel-caption slide-text">
+    <h3>⚽ Футбольна збірна НУПП вийшла у фінал!</h3>
+  </div>
+</div>
+
+<div class="carousel-item">
+  <img src="images/photo3.jpg" class="d-block w-100 slide-img" alt="Слайд 4">
+  <div class="carousel-caption slide-text">
+    <h3>🏀 Баскетбол — перемога у міжвузівському турнірі</h3>
+  </div>
+</div>
+<div class="carousel-item">
+  <img src="images/photo5.jpg" class="d-block w-100 slide-img" alt="Слайд 5">
+  <div class="carousel-caption slide-text">
+    <h3>🏓 Настільний теніс — чемпіонат Полтавщини</h3>
+  </div>
+</div>
+
+    <div class="carousel-item active">
+      <img src="images/photo1.jpg" class="d-block w-100 slide-img" alt="Слайд 1">
+      <div class="carousel-caption slide-text">
+        <h3>🏆 Спортивні події НУПП 2026</h3>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+
+    <div class="carousel-item">
+      <img src="images/photo4.jpg" class="d-block w-100 slide-img" alt="Слайд 2">
+      <div class="carousel-caption slide-text">
+        <h3>🏐 Збірна НУПП з волейболу</h3>
+      </div>
+    </div>
+
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div> 
 
   <!-- 4 КНОПКИ СПОРТІВ -->
   <section class="sports-section">
